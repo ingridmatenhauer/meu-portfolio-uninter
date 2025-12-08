@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Ingrid Dian Matenhauer</title>
+    <style>
+        /* CSS Básico e Limpo (Sem Frameworks) */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: #333; line-height: 1.6; padding-top: 60px; } /* Espaço para o menu fixo */
+        
+        /* Menu de Navegação */
+        nav { background-color: #2c3e50; padding: 15px; position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; text-align: center; }
+        nav a { color: white; text-decoration: none; padding: 10px 20px; font-weight: bold; display: inline-block; }
+        nav a:hover { background-color: #34495e; border-radius: 5px; }
+
+        /* Seções */
+        section { padding: 60px 20px; min-height: 80vh; border-bottom: 1px solid #ddd; max-width: 900px; margin: 0 auto; }
+        h1, h2 { color: #2c3e50; margin-bottom: 20px; }
+        h1 { font-size: 2.5rem; }
+        p { margin-bottom: 15px; text-align: justify; }
+
+        /* Estilo Específico Formação */
+        .education-item { background: #f9f9f9; padding: 15px; margin-bottom: 15px; border-left: 5px solid #2980b9; }
+
+        /* Estilo Específico Portfólio */
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .project-card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center; background: #fff; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+        .project-card h3 { color: #e67e22; }
+
+        /* Formulário de Contato */
+        form { max-width: 600px; margin: 0 auto; background: #f4f4f4; padding: 30px; border-radius: 8px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { display: block; width: 100%; padding: 10px; background: #27ae60; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px;}
+        button:hover { background: #219150; }
+
+        footer { text-align: center; padding: 20px; background: #2c3e50; color: white; margin-top: 20px; }
+        
+        /* Tema Escuro/Claro (Extra sugerido no PDF) */
+        .dark-mode { background-color: #333; color: #fff; }
+        .dark-mode section { border-bottom: 1px solid #555; }
+        .dark-mode .project-card, .dark-mode .education-item { background-color: #444; color: #fff; }
+        .dark-mode form { background-color: #444; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#formacao">Formação</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h1>Ingrid Dian Matenhauer</h1>
+        <h2>Estudante de Ciência de Dados & Futura Engenheira de Dados</h2>
+        <p>Olá! Tenho 32 anos e estou em um momento emocionante de transição de carreira. Atuo como técnica de enfermagem, mas minha verdadeira paixão está na tecnologia e na automação.</p>
+        <p>Atualmente curso Tecnologia em Ciência de Dados na Uninter e estou focada em migrar para a área de Engenharia de Dados e RPA. Sou uma pessoa curiosa, apaixonada por Python, automação com IA e Cloud Computing (AWS).</p>
+        <p>Meu objetivo é utilizar minha bagagem de cuidado e atenção aos detalhes da enfermagem para construir pipelines de dados robustos e soluções automatizadas.</p>
+    </section>
+
+    <section id="formacao">
+        <h2>Formação Acadêmica</h2>
+        
+        <div class="education-item">
+            <h3>Tecnologia em Ciência de Dados</h3>
+            <p><strong>Uninter EAD</strong> | 2º Semestre (Em curso)</p>
+            <p>Foco em estatística, programação e banco de dados.</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Cursos Livres & Aperfeiçoamento</h3>
+            <p><strong>Senac:</strong> Python e Power BI.</p>
+            <p><strong>Laboratória:</strong> Jornada de Dados (Graduada em Nov/2025).</p>
+            <p><strong>Bootcamp de Análise de Dados:</strong> Foco em mulheres na tecnologia (600h).</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Técnica em Enfermagem</h3>
+            <p>Formação anterior, com experiência em processos hospitalares e atendimento.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Meus Projetos</h2>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <h3>Análise RFM</h3>
+                <p>Projeto de segmentação de clientes utilizando metodologia RFM com limpeza de dados e criação de variáveis.</p>
+            </div>
+            <div class="project-card">
+                <h3>App Saúde (Extensão)</h3>
+                <p>Trabalho extensionista da faculdade focado em aplicativos para controle de diabetes e pressão alta.</p>
+            </div>
+            <div class="project-card">
+                <h3>Automação & IA</h3>
+                <p>Estudos práticos sobre automação de processos e uso de Inteligência Artificial generativa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Fale Comigo</h2>
+        <p>Entre em contato para oportunidades em Dados ou RPA.</p>
+        
+        <form id="form-contato">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="seuemail@exemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem..."></textarea>
+            </div>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <strong>Ingrid Dian Matenhauer</strong></p>
+        <p>RU: 5236865 | Uninter 2025</p>
+    </footer>
+
+    <script>
+        // JavaScript Puro para Validação (Obrigatório)
+        document.getElementById('form-contato').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio real para não recarregar a página
+
+            // Captura dos valores
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var mensagem = document.getElementById('mensagem').value;
+
+            // Validação simples
+            if (nome === "" || email === "" || mensagem === "") {
+                alert("Por favor, preencha todos os campos.");
+                return;
+            }
+
+            // Validação de formato de e-mail (Regex simples)
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Por favor, insira um e-mail válido.");
+                return;
+            }
+
+            // Simulação de envio com sucesso
+            alert("Obrigado, " + nome + "! Sua mensagem foi enviada com sucesso.");
+            
+            // Limpar formulário
+            document.getElementById('form-contato').reset();
+        });
+    </script>
+</body>
+</html>
+  
